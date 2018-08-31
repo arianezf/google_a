@@ -1,0 +1,30 @@
+{
+  "name": "proyecto_final_uya-dsi",
+  "version": "1.0.0",
+  "description": "TO DO LIST:",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alu0100894646/Proyecto_final_uya-dsi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alu0100894646/Proyecto_final_uya-dsi/issues"
+  },
+  "homepage": "https://github.com/alu0100894646/Proyecto_final_uya-dsi#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "firebase": "^5.4.0",
+    "firebase-admin": "^5.13.1",
+    "npm": "^6.4.0",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.5",
+    "socket.io": "^2.1.1",
+    "websocket": "^1.0.26"
+  }
+}
