@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125022975-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125022975-1');
+    </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel='stylesheet' href='fullcalendar-3.9.0/fullcalendar.css' />
+  <script src='lib/jquery-3.3.1.min.js'></script>
+  <script src='lib/moment.min.js'></script>
+  <script src='fullcalendar-3.9.0/fullcalendar.js'></script>
+
+  <title>TempUX</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/calendar.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+
+<body onload="setTimeout(cargar_eventos, 300)">
+    <div id="userlogged">
+      Bienvenido:
+      <p id="mostrar_usuario"></p>
+    </div>
+    <div id="button_logout">
+      <button class="btn waves-effect waves-light teal" type="submit" name="action" onClick="log_out()">Desconectarse</button>
+    </div>
+    <div id="calendar"></div>
+
+  <!-- scripts -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
+  <script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyCrRr1EEQNOXhlTNd-3JWd3pCDWS8tTyhU",
+          authDomain: "dsi-pfinal.firebaseapp.com",
+          databaseURL: "https://dsi-pfinal.firebaseio.com",
+          projectId: "dsi-pfinal",
+          storageBucket: "dsi-pfinal.appspot.com",
+          messagingSenderId: "223396973865"
+      };
+      firebase.initializeApp(config);
+  </script>
+  <script src="js/materialize.js"></script>
+  <script src="js/calendar.js"></script>
+
+</body>
+</html>
